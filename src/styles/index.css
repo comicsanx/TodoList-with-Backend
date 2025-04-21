@@ -1,0 +1,126 @@
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    height: 360px;
+    width: 300px;
+}
+
+.Title {
+    justify-content: center;
+    display: flex;
+    margin-top: -40px;
+    font-family: "Poiret One";
+    color:#ec829c;
+}
+
+.TodoList {
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+  position: relative;
+    border: 0.5px solid #888888;
+    border-radius: 0;
+    font-family: "Poiret One";
+    font-weight: 550;
+    padding:10px;
+    background-color: white;
+  
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.form-control::before,
+.form-control::after {
+    content:"";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 100%;
+    height: 100%;
+    background:white;
+    border: 0.5px solid #888888;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
+
+.form-control::before {
+  top: 7px;
+  z-index: -2;
+
+}
+
+
+.form-control::after {
+  top: 13px;
+  left: 13px;
+  z-index: -3;
+}
+  
+  .CustomInput {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-bottom: 0.5px solid #888888;
+    font-size: 16px;           
+    line-height: 20px;        
+    box-sizing: border-box;  
+    height: 30px; 
+    
+  }
+  
+  .CustomInput::placeholder {
+    font-size: 16px;          
+    color: #888;              
+    line-height: 20px;        
+    padding: 0;
+    margin: 0;  
+    border: none;          
+  }
+
+  .CustomInput:focus {
+    outline: none;
+  }
+
+.CustomButton i {
+    visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.CustomButton:hover i {
+    visibility: visible;
+    opacity: 1;
+    font-size: 20px;
+    color: rgb(168, 171, 175);
+}
+
+.DeleteButton {
+background-color: #ec829c;
+color:white;
+box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.301);
+margin-left: 132px;
+margin-top: 10px;
+transition: background-color 0.3s ease;
+}
+
+.DeleteButton:hover {
+  background-color: #ce637d; 
+  color: white;
+}
+
+ul {
+    padding: 0;
+    margin: 0; 
+  }
+  
+li {
+    border-bottom: 0.5px solid #888888 !important;
+  }
+
