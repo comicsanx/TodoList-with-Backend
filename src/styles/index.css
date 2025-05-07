@@ -8,9 +8,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh; /* Ajuste con unidad relativa */
-  width: 80%; /* Ancho en porcentaje */
-  max-width: 600px; /* Ancho máximo si se desea */
+  margin-top: 5vh;
+  width: 80%; 
+  max-width: 600px;
 }
 
 .Title {
@@ -23,8 +23,8 @@ body {
 }
 
 .TodoList {
-  width: 90%; /* Ancho en porcentaje */
-  max-width: 500px; /* Ancho máximo si se desea */
+  width: 90%; 
+  max-width: 500px; 
   align-items: center;
   justify-content: center;
 }
@@ -136,9 +136,9 @@ li {
   padding-top: 10px;
 }
 
-/* Media queries para hacerlo responsive */
 
-/* Para pantallas más pequeñas (hasta 768px de ancho) */
+
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
@@ -185,7 +185,7 @@ li {
   }
 }
 
-/* Para pantallas aún más pequeñas (hasta 480px de ancho) */
+
 @media (max-width: 480px) {
   .Title {
     font-size: 36px;
