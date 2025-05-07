@@ -114,7 +114,7 @@ const Home = () => {
 	return (
 		<div className="container">
 			<div className="TodoList">
-				<div className="Title"><h1>ToDo's</h1></div>
+				<div className="Title">ToDo's</div>
 				<div className="form-control">
 					<input
 						type="text"
