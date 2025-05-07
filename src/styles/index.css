@@ -1,70 +1,65 @@
 body {
-  font-family: sans-serif; 
-  margin: 0;             
-  background-color: #ecebeb86; 
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #ecebeb86;
 }
 
 .container {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    height: 360px;
-    width: 600px;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh; /* Ajuste con unidad relativa */
+  width: 80%; /* Ancho en porcentaje */
+  max-width: 600px; /* Ancho máximo si se desea */
 }
 
 .Title {
-    justify-content: center;
-    display: flex;
-    margin-top: -40px;
-    font-family: "Poiret One";
-    font-size: 60px;
-    color:#ff7a9b;
+  justify-content: center;
+  display: flex;
+  margin-top: -40px;
+  font-family: "Poiret One";
+  font-size: 60px;
+  color: #ff7a9b;
 }
 
 .TodoList {
-    height: 200px;
-    width: 500px;
-    align-items: center;
-    justify-content: center;
+  width: 90%; /* Ancho en porcentaje */
+  max-width: 500px; /* Ancho máximo si se desea */
+  align-items: center;
+  justify-content: center;
 }
 
 .form-control {
   position: relative;
-    border: 0.5px solid #888888;
-    border-radius: 0;
-    font-family: "Lora";
-    font-size: 24px;
-    font-weight: 300;
-    color: #575757 !important;
-    padding:10px;
-    background-color: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    
+  border: 0.5px solid #888888;
+  border-radius: 0;
+  font-family: "Lora";
+  font-size: 24px;
+  font-weight: 300;
+  color: #575757 !important;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-control::before,
 .form-control::after {
-    content:"";
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 100%;
-    height: 100%;
-    background:white;
-    border: 0.5px solid #888888;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: 0.5px solid #888888;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+  z-index: -1;
 }
 
 .form-control::before {
   top: 7px;
   z-index: -2;
-  
-
 }
-
 
 .form-control::after {
   top: 13px;
@@ -72,74 +67,128 @@ body {
   z-index: -3;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
-  
-  .CustomInput {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    border: none;
-    border-bottom: 0.5px solid #a1a1a1;
-    font-size: 24px;
-    color: #888888c9;           
-    line-height: 20px;        
-    box-sizing: border-box;  
-    height: 40px; 
-    
-  }
-  
-  .CustomInput::placeholder {
-    font-size: 24px;       
-    color:#ff7a9b7a;
-    font-family: "Lora";
-    font-weight: 300;           
-    line-height: 20px;        
-    padding: 0;
-    margin: 0;  
-    text-align: right;
-    border: none;          
-  }
 
-  .CustomInput:focus {
-    outline: none;
-  }
+.CustomInput {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-bottom: 0.5px solid #a1a1a1;
+  font-size: 24px;
+  color: #888888c9;
+  line-height: 20px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.CustomInput::placeholder {
+  font-size: 24px;
+  color: #ff7a9b7a;
+  font-family: "Lora";
+  font-weight: 300;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  border: none;
+}
+
+.CustomInput:focus {
+  outline: none;
+}
 
 .CustomButton i {
-    visibility: hidden;
+  visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .CustomButton:hover i {
-    visibility: visible;
-    opacity: 1;
-    font-size: 20px;
-    color: rgb(168, 171, 175);
+  visibility: visible;
+  opacity: 1;
+  font-size: 20px;
+  color: rgb(168, 171, 175);
 }
 
 .DeleteButton {
-background-color: #ec829c;
-color:white;
-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.301);
-margin-left: 132px;
-margin-top: 10px;
-transition: background-color 0.3s ease;
-margin-left: auto;  
-margin-right: auto;
-display: block;   
+  background-color: #ec829c;
+  color: white;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.301);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: background-color 0.3s ease;
 }
 
 .DeleteButton:hover {
-  background-color: #ce637d; 
+  background-color: #ce637d;
   color: white;
 }
 
 ul {
-    padding: 0;
-    margin: 0; 
-  }
-  
+  padding: 0;
+  margin: 0;
+}
+
 li {
-    border-bottom: 0.5px solid #888888 !important;
-    padding-top: 10px;
+  border-bottom: 0.5px solid #888888 !important;
+  padding-top: 10px;
+}
+
+/* Media queries para hacerlo responsive */
+
+/* Para pantallas más pequeñas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    margin-top: 3vh;
   }
 
+  .TodoList {
+    width: 95%;
+  }
+
+  .Title {
+    font-size: 48px;
+    margin-top: -20px;
+  }
+
+  .form-control {
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .CustomInput {
+    font-size: 20px;
+    line-height: 18px;
+    height: 35px;
+  }
+
+  .CustomInput::placeholder {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  li {
+    padding-top: 8px;
+    font-size: 18px;
+  }
+
+  .CustomButton i {
+    font-size: 16px;
+  }
+
+  .DeleteButton {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Para pantallas aún más pequeñas (hasta 480px de ancho) */
+@media (max-width: 480px) {
+  .Title {
+    font-size: 36px;
+    margin-top: -10px;
+  }
+}
